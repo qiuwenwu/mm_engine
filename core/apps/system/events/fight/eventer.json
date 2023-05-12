@@ -1,0 +1,4 @@
+{
+	"name": "战斗事件",
+	"script": "./eventer.js"
+}

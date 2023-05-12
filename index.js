@@ -10,6 +10,12 @@ class MM_engine {
 	 */
 	constructor(config) {
 		this.config = {};
+		
+		if(config.runPath){
+			$.runPath = config.runPath + $.slash;
+			$.gamePath = $.runPath + "game" + $.slash;
+		}
+		
 		this.init(config);
 	}
 }
@@ -28,6 +34,13 @@ MM_engine.prototype.loadMod = function(config) {
 MM_engine.prototype.init = function(config) {
 	this.config = Object.assign(this.config, config);
 	this.loadMod(config);
+}
+
+/**
+ * 运行
+ */
+MM_engine.prototype.run = function(){
+	
 }
 
 module.exports = MM_engine;

@@ -1,5 +1,3 @@
-var Lib = require("../lib/index.js");
+require("mm_expand");
 
-$.runPath = __dirname + $.slash;
-var lib = new Lib();
-
+require("./eventer.js");

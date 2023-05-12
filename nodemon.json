@@ -19,6 +19,7 @@
 	"watch": [
 		"app",
 		"game",
+		"demo",
 		"lib",
 		"core",
 		"test"
