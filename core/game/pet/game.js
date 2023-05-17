@@ -12,7 +12,7 @@ class Pet extends Base {
 		this.path = "/game/data/pet".fullname(__dirname);
 		// 文件拓展名
 		this.extension = "pet.json";
-		this.dir = "/game";
+		this.dir = "/data";
 		this.init();
 	}
 }

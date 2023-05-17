@@ -12,7 +12,7 @@ class Skill extends Base {
 		this.path = "/game/data/skill".fullname(__dirname);
 		// 文件拓展名
 		this.extension = "skill.json";
-		this.dir = "/game";
+		this.dir = "/data";
 		this.init();
 	}
 }

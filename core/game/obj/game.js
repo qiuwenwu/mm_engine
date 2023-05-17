@@ -11,10 +11,10 @@ class Obj extends Base {
 	constructor() {
 		super();
 		// 检索的文件路径
-		this.path = "/cache/obj".fullname(__dirname);
+		this.path = "/game/cache/obj".fullname(__dirname);
 		// 文件拓展名
 		this.extension = "obj.json";
-		this.dir = "/game";
+		this.dir = "/cache";
 		this.init();
 	}
 }
@@ -48,7 +48,7 @@ Obj.prototype.refresher = function() {
 /**
  * 初始化之后
  */
-Map.prototype.init_after = function() {
+Obj.prototype.init_after = function() {
 	this.refresh();
 	this.refresher();
 }

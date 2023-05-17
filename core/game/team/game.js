@@ -10,10 +10,10 @@ class Team extends Base {
 	constructor() {
 		super();
 		// 检索的文件路径
-		this.path = "/cache/team".fullname(__dirname);
+		this.path = "/game/cache/team".fullname(__dirname);
 		// 文件拓展名
 		this.extension = "team.json";
-		this.dir = "/game";
+		this.dir = "/cache";
 		this.init();
 	}
 }

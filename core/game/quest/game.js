@@ -12,7 +12,7 @@ class Quest extends Base {
 		this.path = "/game/data/quest".fullname(__dirname);
 		// 文件拓展名
 		this.extension = "quest.json";
-		this.dir = "/game";
+		this.dir = "/data";
 		this.init();
 	}
 }

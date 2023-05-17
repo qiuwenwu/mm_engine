@@ -16,6 +16,30 @@ class Eventer {
 }
 
 /**
+ * 模型
+ */
+Eventer.prototype.model = function() {
+	return {
+		// 定时器ID
+		id: 0,
+		// 消息类型
+		type: "发动攻击时",
+		// 时态
+		tense: "main",
+		// 总执行次数 -1为无限次
+		count: 0,
+		// 执行次数
+		num: 0,
+		// 状态 1启用，2暂停，0结束
+		state: 1,
+		// 参数
+		param: {},
+		// 回调函数
+		func: function() {}
+	}
+}
+
+/**
  * 添加事件
  * @param {String} type 事件类型
  * @param {Function} func 回调函数

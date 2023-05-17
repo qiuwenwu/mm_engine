@@ -12,7 +12,7 @@ class Level extends Base {
 		this.path = "/game/data/level".fullname(__dirname);
 		// 文件拓展名
 		this.extension = "level.json";
-		this.dir = "/game";
+		this.dir = "/data";
 		this.init();
 	}
 }

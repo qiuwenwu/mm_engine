@@ -12,7 +12,7 @@ class Maps extends Base {
 		this.path = "/game/data/map".fullname(__dirname);
 		// 文件拓展名
 		this.extension = "map.json";
-		this.dir = "/game";
+		this.dir = "/data";
 		this.init();
 	}
 }
@@ -131,10 +131,10 @@ Maps.prototype.refresher = function() {
  * 初始化之后
  */
 Maps.prototype.init_after = function() {
-	setTimeout(() => {
-		this.refresh();
-		this.refresher();
-	}, 1000)
+	// setTimeout(() => {
+	// 	this.refresh();
+	// 	this.refresher();
+	// }, 1000)
 }
 
 module.exports = new Maps();

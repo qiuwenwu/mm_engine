@@ -12,7 +12,7 @@ class Npc extends Base {
 		this.path = "/game/data/npc".fullname(__dirname);
 		// 文件拓展名
 		this.extension = "npc.json";
-		this.dir = "/game";
+		this.dir = "/data";
 		this.init();
 	}
 }

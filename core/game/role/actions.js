@@ -1,5 +1,5 @@
 const ActionsBase = require("../../../lib/actions.js");
-const Obj = require("./obj.js");
+const Role = require("./role.js");
 
 class Actions extends ActionsBase {
 	/**
@@ -17,7 +17,7 @@ class Actions extends ActionsBase {
  * @param {Object} obj
  */
 Actions.prototype.ref = function(obj) {
-	return new Obj(obj);
+	return new Role(obj);
 }
 
 module.exports = Actions;

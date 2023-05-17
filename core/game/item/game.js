@@ -13,7 +13,7 @@ class Item extends Base {
 		this.path = "/game/data/item".fullname();
 		// 文件拓展名
 		this.extension = "item.json";
-		this.dir = "/game";
+		this.dir = "/data";
 		this.init();
 	}
 }

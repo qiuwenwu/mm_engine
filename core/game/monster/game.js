@@ -12,7 +12,7 @@ class Monster extends Base {
 		this.path = "/game/data/monster".fullname(__dirname);
 		// 文件拓展名
 		this.extension = "monster.json";
-		this.dir = "/game";
+		this.dir = "/data";
 		this.init();
 	}
 }

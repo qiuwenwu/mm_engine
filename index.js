@@ -10,12 +10,12 @@ class MM_engine {
 	 */
 	constructor(config) {
 		this.config = {};
-		
-		if(config.runPath){
-			$.runPath = config.runPath + $.slash;
+
+		if (config.path) {
+			$.runPath = config.path + $.slash;
 			$.gamePath = $.runPath + "game" + $.slash;
 		}
-		
+
 		this.init(config);
 	}
 }
@@ -39,8 +39,8 @@ MM_engine.prototype.init = function(config) {
 /**
  * 运行
  */
-MM_engine.prototype.run = function(){
-	
+MM_engine.prototype.run = function() {
+
 }
 
 module.exports = MM_engine;
